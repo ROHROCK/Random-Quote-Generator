@@ -1,0 +1,69 @@
+#body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh;
+  transition: background-color 1.5s ease;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+#quote-box{
+  /* display: flex-container; */
+  transition: background-color 1.5s ease;
+  background-color: #f1f1f1;
+  color: DodgerBlue;
+  padding:2%;
+  width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  /* width: ;
+  height: 100px; */
+}
+h1,h5{
+  font-family: 'Courier New', Courier, monospace;
+  color:white;
+}
+#text{
+  transition: color 1s ease;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+}
+#author{
+  transition: color 1s ease;
+  text-align: end;
+  padding-top: 1%;
+}
+#button-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+#submit{
+  transition: background-color 1.5s ease;
+  background-color: DodgerBlue; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  align-self: baseline;
+  border-radius: 5px;
+}
+
+#tweet-section{
+  transition: background-color 1.5s ease;
+  color: white;
+  display: inline-block;
+  align-self: baseline;
+  border-radius: 5px;
+}
