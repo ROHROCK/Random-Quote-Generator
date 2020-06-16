@@ -1,0 +1,84 @@
+exports[`test renders without crashing 1`] = `
+<div
+  className="app"
+  id="body"
+  style={
+    Object {
+      "backgroundColor": "#f2476a",
+    }
+  }>
+  <h1
+    style={
+      Object {
+        "color": "white",
+        "padding": 10,
+      }
+    }>
+    Random Quote Generator
+  </h1>
+  <h5
+    style={
+      Object {
+        "color": "white",
+        "padding": 10,
+      }
+    }>
+    Using React JS !
+  </h5>
+  <div
+    className="centered"
+    id="quote-box">
+    <div
+      id="text"
+      style={
+        Object {
+          "color": "#f2476a",
+        }
+      }>
+      Silences make the real conversations between friends. Not the saying but the never needing to say is what counts.
+    </div>
+    <div
+      id="author"
+      style={
+        Object {
+          "color": "#f2476a",
+        }
+      }>
+      - 
+      Margaret Runbeck
+    </div>
+    <div
+      id="button-section">
+      <div
+        id="tweet-section"
+        style={
+          Object {
+            "backgroundColor": "#f2476a",
+          }
+        }>
+        <a
+          className="fa fa-twitter"
+          href="http://www.twitter.com/intent/tweet"
+          style={
+            Object {
+              "color": "white",
+            }
+          } />
+      </div>
+      <div
+        id="new-quote">
+        <button
+          id="submit"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "#f2476a",
+            }
+          }>
+          Next Quote
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

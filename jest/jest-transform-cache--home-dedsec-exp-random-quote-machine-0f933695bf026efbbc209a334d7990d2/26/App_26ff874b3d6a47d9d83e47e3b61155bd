@@ -1,0 +1,59 @@
+/* istanbul ignore next */'use strict';Object.defineProperty(exports, "__esModule", { value: true });var _jsxFileName = '/home/dedsec/exp/random-quote-machine/src/App.js';var /* istanbul ignore next */_react = require('react'); /* istanbul ignore next */var _react2 = _interopRequireDefault(_react);
+/* istanbul ignore next */require('./App.css');
+/* istanbul ignore next */require('bootstrap/dist/css/bootstrap.min.css');
+var /* istanbul ignore next */_quotes = require('./quotes.json'); /* istanbul ignore next */var _quotes2 = _interopRequireDefault(_quotes);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+// import styles from './twitter.module.css:';
+
+var colorPalette = ["#f2476a", "#fb654e", "#eb2d3a", "#add8e6", "#90ee90", "#861818", "#867b18", "#1b8618", "#18867b", "#321886"];
+
+class App extends /* istanbul ignore next */_react. /* istanbul ignore next */Component {
+  constructor(props) {
+    super(props); /* istanbul ignore next */this.
+
+
+
+
+
+
+
+    getRandomQuote = () => {
+      var index = Math.floor(Math.random() * 3000);
+      var colorIndex = Math.floor(Math.random() * 10);
+      console.log("Color Index", colorIndex);
+
+      this.setState({
+        text: /* istanbul ignore next */_quotes2. /* istanbul ignore next */default[index].quoteText,
+        author: /* istanbul ignore next */_quotes2. /* istanbul ignore next */default[index].quoteAuthor,
+        color: colorPalette[colorIndex] });
+
+    };this.state = { text: "", author: "", color: colorPalette[0] };this.getRandomQuote = this.getRandomQuote.bind(this);}
+  componentDidMount() {
+    this.getRandomQuote();
+  }
+  render() {
+    return (
+      /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ id: 'body', className: 'app', style: { backgroundColor: this.state.color }, __source: { fileName: _jsxFileName, lineNumber: 35 }, __self: this },
+        /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'h1', /* istanbul ignore next */{ style: { color: "white", padding: 10 }, __source: { fileName: _jsxFileName, lineNumber: 36 }, __self: this }, /* istanbul ignore next */'Random Quote Generator'),
+        /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'h5', /* istanbul ignore next */{ style: { color: "white", padding: 10 }, __source: { fileName: _jsxFileName, lineNumber: 37 }, __self: this }, /* istanbul ignore next */'Using React JS !'),
+        /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ id: 'quote-box', className: 'centered', __source: { fileName: _jsxFileName, lineNumber: 38 }, __self: this },
+          /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ id: 'text', style: { color: this.state.color }, __source: { fileName: _jsxFileName, lineNumber: 39 }, __self: this },
+            this.state.text),
+
+          /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ id: 'author', style: { color: this.state.color }, __source: { fileName: _jsxFileName, lineNumber: 42 }, __self: this }, /* istanbul ignore next */'- ',
+            this.state.author),
+
+          /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ id: 'button-section', __source: { fileName: _jsxFileName, lineNumber: 45 }, __self: this },
+            /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ id: 'tweet-section', style: { backgroundColor: this.state.color }, __source: { fileName: _jsxFileName, lineNumber: 46 }, __self: this },
+              /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'a', /* istanbul ignore next */{ style: { color: "white" }, href: 'http://www.twitter.com/intent/tweet', className: 'fa fa-twitter', __source: { fileName: _jsxFileName, lineNumber: 47 }, __self: this })),
+
+            /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ id: 'new-quote', __source: { fileName: _jsxFileName, lineNumber: 49 }, __self: this },
+              /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'button', /* istanbul ignore next */{ style: { backgroundColor: this.state.color }, id: 'submit', onClick: this.getRandomQuote, __source: { fileName: _jsxFileName, lineNumber: 50 }, __self: this }, /* istanbul ignore next */'Next Quote'))))));
+
+
+
+
+
+  }} /* istanbul ignore next */exports.default =
+
+
+App;
