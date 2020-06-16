@@ -1,6 +1,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/ROHROCK/Random-Quote-Generator)](https://github.com/ROHROCK/Random-Quote-Generator/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/ROHROCK/Random-Quote-Generator)](https://github.com/ROHROCK/Random-Quote-Generator/issues)
 [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FROHROCK%2FRandom-Quote-Generator)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FROHROCK%2FRandom-Quote-Generator)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/rohrock/Random-Quote-Generator/react)
 
 # Demo :rocket:
 <p align="center">
